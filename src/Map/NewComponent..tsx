@@ -9,11 +9,11 @@ type StudentType = {
     name: string
     age: number
 }
-export const NewComponent = (props:NewComponentType) => {
+export const NewComponent = (props: NewComponentType) => {
     return (
         <ul>
-            {props.students.map((objectFromStudentArray, index)=>{
-                return(
+            {props.students.map((objectFromStudentArray) => {
+                return (
                     <li key={objectFromStudentArray.id}>
                         <span>{objectFromStudentArray.name}</span>
                         <span> age: {objectFromStudentArray.age}</span>
@@ -25,8 +25,3 @@ export const NewComponent = (props:NewComponentType) => {
 }
 
 
-// const topCars = [
-//     {manufacturer:'BMW', model:'m5cs'},
-//     {manufacturer:'Mercedes', model:'e63s'},
-//     {manufacturer:'Audi', model:'rs6'}
-// ]

@@ -1,7 +1,13 @@
 import {NewComponent} from "./Map/NewComponent.";
-import {useState} from "react";
+// import {useState} from "react";
+import {NewComponent2} from "./Map/NewComponent2";
 
 function App() {
+    const topCars = [
+        {manufacturer: 'BMW', model: 'm5cs'},
+        {manufacturer: 'Mercedes', model: 'e63s'},
+        {manufacturer: 'Audi', model: 'rs6'}
+    ]
     const students = [
         {id: 1, name: "James", age: 8},
         {id: 2, name: "Robert", age: 18},
@@ -16,7 +22,10 @@ function App() {
         {id: 11, name: "Christopher", age: 100},
     ]
     return (
-        <NewComponent students={students}/>
+        <>
+            <NewComponent students={students}/>
+            <NewComponent2 topCars={topCars}/>
+        </>
     );
 }
 
